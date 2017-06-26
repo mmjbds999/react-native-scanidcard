@@ -1,0 +1,5 @@
+rootProject.name = 'ScanIdCard'
+
+include ':app', ':idcard-library'
+
+include ':app'

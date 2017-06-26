@@ -1,0 +1,13 @@
+{
+  "name": "react-native-scanidcard",
+  "version": "0.0.1",
+  "description": "身份证扫描识别",
+  "keywords": [
+    "react-native",
+    "scanidcard",
+    "scan",
+    "idcard",
+    "react-native-scanidcard"
+  ],
+  "author": "mmjbds999"
+}
