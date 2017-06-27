@@ -11,8 +11,6 @@ import {
   Text,
 } from 'react-native';
 
-import Viewfinder from './Viewfinder';
-
 class ScanView extends Component {
   constructor(props) {
     super(props);
