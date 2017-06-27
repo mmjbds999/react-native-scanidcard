@@ -28,6 +28,11 @@ project(':idcard-library').projectDir = new File(rootProject.projectDir, '../nod
     compile project(':idcard-library')
 ```
 
+在android/app/src MainApplication的getPackages方法中加入
+```
+new ScanPackage()
+```
+
 # 调用demo
 ```javascript
 import React, { Component } from 'react';
