@@ -14,6 +14,20 @@ IOS版本将在稍后补上
 npm install react-native-scanidcard
 ```
 
+在android目录下的settings.gradle中加入
+```javascript
+include ':react-native-scanidcard'
+project(':react-native-scanidcard').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-scanidcard/android/app')
+include ':idcard-library'
+project(':idcard-library').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-scanidcard/android/idcard-library')
+```
+
+在android/app中的build.gradle中加入
+```javascript
+    compile project(':react-native-scanidcard')
+    compile project(':idcard-library')
+```
+
 # 调用demo
 ```javascript
 import React, { Component } from 'react';
