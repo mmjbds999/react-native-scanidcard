@@ -14,7 +14,6 @@ android {
 }
 
 dependencies {
-    compile "com.facebook.react:react-native:+"  // From node_modules
     // 身份证扫描
     compile project(path: ':idcard-library')
     compile project(':idcard-library')
