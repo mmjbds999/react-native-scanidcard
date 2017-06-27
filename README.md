@@ -1,8 +1,12 @@
 # react-native-scanidcard
 react-native 身份证扫描（Android版）
+
 IOS版本将在稍后补上
+
 实现原理为Camera自动对焦成功后获取当前帧进行针对身份证的图像识别，识别后验证身份证，验证通过则返回，不通过则进行2次对焦并识别，直到通过为止
+
 返回的字段包含【姓名】【身份证号】【性别】【年龄】
+
 地址如需返回的，可修改源码的ScanView.class
 
 # 安装
@@ -61,4 +65,5 @@ class ScanScreen extends Component {
 
 export default ScanScreen;
 ```
-
+# The End
+感谢dreamkid提供的library
