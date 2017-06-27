@@ -10,7 +10,9 @@ IOS版本将在稍后补上
 地址如需返回的，可修改源码的ScanView.class
 
 # 安装
-```javascript npm install react-native-scanidcard```
+```javascript 
+npm install react-native-scanidcard
+```
 
 # 调用demo
 ```javascript
