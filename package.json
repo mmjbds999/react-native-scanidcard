@@ -1,0 +1,28 @@
+{
+  "name": "react-native-scanidcard",
+  "version": "1.0.0",
+  "description": "身份证扫描（Android版）",
+  "main": "ScanView.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mmjbds999/react-native-scanidcard.git"
+  },
+  "keywords": [
+    "scanidcard",
+    "scanid",
+    "react-native",
+    "react-native-scanidcard",
+    "身份证扫描",
+    "身份证识别",
+    "身份证"
+  ],
+  "author": "mmjbds999",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmjbds999/react-native-scanidcard/issues"
+  },
+  "homepage": "https://github.com/mmjbds999/react-native-scanidcard#readme"
+}
