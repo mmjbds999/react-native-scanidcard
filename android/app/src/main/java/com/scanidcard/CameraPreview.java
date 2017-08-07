@@ -83,7 +83,11 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                 int w = this.getLayoutParams().width;
                 int h = this.getLayoutParams().height;
 
-                cp.setPreviewSize(h,w);
+                if(w>h) {
+                    cp.setPreviewSize(w, h);
+                }else{
+                    cp.setPreviewSize(h, w);
+                }
 //                cp.setPictureSize(h,w);
 
                 camera.setParameters(cp);
@@ -167,7 +171,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     }
 
     /**
-     * 延迟一秒自动对焦
+     * 延迟半秒自动对焦
      */
     private void scheduleAutoFocus() {
         autoFocusHandler.postDelayed(new Runnable() {
@@ -177,7 +181,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                     autoFocus();
                 }
             }
-        }, 1000);
+        }, 500);
     }
 
     /**
