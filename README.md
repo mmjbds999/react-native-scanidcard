@@ -73,13 +73,11 @@ class ScanScreen extends Component {
 
   render() {
     return (
-      <View>
         <ScanView 
           style={{ flex: 1 }}
           torchMode={this.state.torchMode}
           cameraType={this.state.cameraType}
         />
-      </View>
     );
   }
 }
