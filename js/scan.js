@@ -11,6 +11,9 @@ import {
 
 import ScanView from '../native_ui/ScanView.js';
 import TextInputWidget from './TextInputWidget.js';
+import {Dimensions} from 'react-native'
+
+const w = Dimensions.get('window').width
 
 class ScanScreen extends Component {
   constructor(props) {
@@ -36,46 +39,25 @@ class ScanScreen extends Component {
   }
 
   scanCallBack(e) {
-    this.setState({
-      idcard : e.id,
-      name : e.name,
-      sex: e.sex,
-      age: e.age
-    })
+    alert(e.name+":"+e.id);
+    //this.setState({
+    //  idcard : e.id,
+    //  name : e.name,
+    //  sex: e.sex,
+    //  age: e.age
+    //})
   }
 
   render() {
     return (
-      <View>
-        <ScanView 
+      <ScanView 
           style={{ flex: 1 }}
           torchMode={this.state.torchMode}
-          cameraType={this.state.cameraType}
-        />
-
-        <View style={{
-          marginTop:260,
-        }}>
-          <TextInputWidget  
-            title='身份证号'  
-            value={this.state.idcard} />  
-
-          <TextInputWidget  
-            title='姓名'  
-            value={this.state.name} /> 
-    
-          <TextInputWidget  
-              title='性别' 
-              value={this.state.sex}/>  
-    
-          <TextInputWidget  
-            title='年龄'  
-            value={this.state.age} />  
-    
-        </View>
-      </View>
+          cameraType={this.state.cameraType}>
+      </ScanView>
     );
   }
+
 }
 
 export default ScanScreen;

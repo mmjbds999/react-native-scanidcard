@@ -12,7 +12,7 @@ import android.util.Log;
 public class ImageFilter {
 
     /**
-     * 截取中间35%的图像
+     * 截取中间的图像
      * @param bitmap
      * @return
      */
