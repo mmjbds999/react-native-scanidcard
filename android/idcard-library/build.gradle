@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
+<<<<<<< HEAD
     buildTypes {
         release {
             minifyEnabled false
@@ -21,4 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile "com.android.support:appcompat-v7:23.0.1"
+=======
+>>>>>>> ee76d4b4b26c8065f3be554b6de68fb421481e4e
 }

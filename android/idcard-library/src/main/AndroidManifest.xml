@@ -1,8 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ym.idcard.reg">
 
+<<<<<<< HEAD
     <application android:allowBackup="true" android:label="@string/app_name"
         android:supportsRtl="true">
 
     </application>
 
+=======
+>>>>>>> ee76d4b4b26c8065f3be554b6de68fb421481e4e
 </manifest>
