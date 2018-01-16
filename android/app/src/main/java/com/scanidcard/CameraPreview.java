@@ -151,10 +151,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                 camera.setParameters(cp);
 
                 camera.startPreview();
-<<<<<<< HEAD
-
-=======
->>>>>>> ee76d4b4b26c8065f3be554b6de68fb421481e4e
                 if(autoFocus){
                     if(surfaceCreated){
                         autoFocus();
